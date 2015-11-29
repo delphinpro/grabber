@@ -3,3 +3,4 @@ vendor/
 .idea/
 node_modules/
 public_html/application/cache/
+public_html/design/
