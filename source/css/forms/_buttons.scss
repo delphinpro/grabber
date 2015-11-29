@@ -1,0 +1,50 @@
+/********************************************************************
+ * Forms. Buttons.
+ */
+
+@import "../config";
+@import "../mixins";
+
+//===================================================================
+
+@mixin button-color($bg, $color: #fff, $disabled-color: #ccc) {
+    color: $color;
+    background: $bg;
+    text-shadow: 1px 1px 1px darken($bg, 15%);
+
+    &:hover { background: darken($bg, 5%); }
+    &:active { box-shadow: 0 0 10px 5px rgba($bg, 0.3); }
+    &:disabled {
+        text-shadow: none;
+        box-shadow: none;
+        background: desaturate($bg, 50%);
+        color: $disabled-color;
+        cursor: default;
+    }
+}
+
+.btn {
+    line-height: 50px;
+    padding: 0 2em;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #1f253d;
+    transition: background 0.1s ease-out 0s;
+    transition-property: background, box-shadow;
+    transform-style: preserve-3d;
+    transform-origin: 50% 100%;
+    // default theme
+    @include button-color(#2d3558);
+
+    &:active { transform: perspective(200px) rotate3d(1, 0, 0, 2deg); }
+    &:disabled { transform: none; }
+
+    &--success { @include button-color(#11a8ab); }
+    &--danger { @include button-color(#e64c65); }
+    &--info { @include button-color(#4fc4f6); }
+}

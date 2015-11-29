@@ -1,0 +1,59 @@
+{#
+  @since        28.10.2015 02:56
+  @author       delphinpro delphinpro@gmail.com
+  @copyright    copyright (C) 2015 delphinpro
+  @license      Licensed under the MIT license
+#}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web page grabber</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/design/css/screen.css">
+    <script src="/design/js/vendor.js"></script>
+    <script src="/design/js/main.js"></script>
+</head>
+<body>
+<div class="main-container">
+
+    <div class="block clearfix">
+        <h1 class="block__inner page-header">Web page grabber</h1>
+
+        <div class="profile-menu">
+            <p><a href="http://delphinpro.ru">delphinpro</a></p>
+            <div class="profile-picture small-profile-picture">
+                <img width="40" alt="delphinpro photo" src="/design/images/100x100.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="block clearfix">
+        <div class="block__inner">
+            <form id="grab-form" action="/grab" method="post">
+                <div class="form-group">
+                    <label for="">URL to download:</label>
+                    <input class="form-input" name="url" type="text" placeholder="http://website.com" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn--success" type="submit">Grab!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="block clearfix">
+        <div class="block__inner">
+            <pre id="report"></pre>
+        </div>
+    </div>
+
+    <div class="block clearfix">
+        <div class="block__inner">
+            <pre id="test"></pre>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

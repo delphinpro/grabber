@@ -1,0 +1,28 @@
+/********************************************************************
+ * Initialize
+ */
+@import "../config";
+@import "../mixins";
+
+//===================================================================
+
+* {
+    box-sizing: border-box;
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background: #1f253d;
+    color: #9099b7;
+}
+
+.main-container {
+    font-family: 'Ubuntu', sans-serif;
+    width: 960px;
+    //height: 1725px;
+    margin: 0 auto;
+    padding: 20px 0;
+}

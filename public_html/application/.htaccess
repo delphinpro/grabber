@@ -1,0 +1,6 @@
+AddDefaultCharset utf-8
+
+Order Deny,Allow
+Deny from all
+
+Options -Indexes

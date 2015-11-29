@@ -1,0 +1,39 @@
+/********************************************************************
+ * Typography
+ */
+@import "../config";
+@import "../mixins";
+
+//===================================================================
+
+/** Headings */
+
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+.page-header {
+    margin: 0;
+    float: left;
+}
+
+/** Paragraph */
+
+p {
+    font-size: 15px;
+}
+
+/** Links */
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
