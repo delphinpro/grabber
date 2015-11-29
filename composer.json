@@ -1,0 +1,16 @@
+{
+  "require": {
+    "php": ">=5.4",
+    "slim/slim": "2.*",
+    "twig/twig": "~1.18",
+    "slim/views": "^0.1.3",
+    "delphinpro/dumper": "^1.0",
+    "electrolinux/phpquery": "^0.9.6"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "delphinpro\\grabber\\": "public_html/application"
+    }
+  }
+}
